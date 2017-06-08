@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"errors"
 	"strconv"
-	"github.com/accessviolationsec/Threebits/structures"
+	"github.com/g-clef/Threebits/structures"
 )
 
 type HTTPSBanner struct{
@@ -38,3 +38,11 @@ func (h HTTPSBanner) Handle(socket net.Conn, test structures.Test) (bool, string
 func (h HTTPSBanner) Protocol()(string){
 	return "tcp"
 }
+
+func (h HTTPSBanner) DefineArguments() {
+}
+
+func (h HTTPSBanner) Initialize() (error){
+    return nil
+}
+

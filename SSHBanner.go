@@ -2,7 +2,7 @@ package Threebits_plugins_public
 
 import (
 	"net"
-	"github.com/accessviolationsec/Threebits/structures"
+	"github.com/g-clef/Threebits/structures"
 	"bufio"
 )
 
@@ -21,4 +21,11 @@ func (s SSHBanner)Handle(socket net.Conn, test structures.Test) (bool, string, e
 
 func (s SSHBanner) Protocol()(string){
 	return "tcp"
+}
+
+func (s SSHBanner) DefineArguments() {
+}
+
+func (s SSHBanner) Initialize() (error){
+    return nil
 }

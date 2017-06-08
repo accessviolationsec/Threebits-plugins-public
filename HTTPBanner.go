@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"errors"
 	"strconv"
-	"github.com/accessviolationsec/Threebits/structures"
+	"github.com/g-clef/Threebits/structures"
 )
 
 type HTTPBanner struct{
@@ -38,3 +38,11 @@ func (h HTTPBanner) Handle(socket net.Conn, test structures.Test) (bool, string,
 func (h HTTPBanner) Protocol()(string){
 	return "tcp"
 }
+
+func (h HTTPBanner) DefineArguments() {
+}
+
+func (h HTTPBanner) Initialize() (error){
+    return nil
+}
+
