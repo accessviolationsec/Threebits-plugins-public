@@ -1,12 +1,12 @@
 package Threebits_plugins_public
 
 import (
-    "bytes"
-    "encoding/hex"
-    "flag"
 	"net"
 	"github.com/g-clef/Threebits/structures"
 	"reflect"
+	"encoding/hex"
+	"bytes"
+	"flag"
 )
 
 

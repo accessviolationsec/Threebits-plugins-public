@@ -41,8 +41,3 @@ func (h HTTPSBanner) Protocol()(string){
 
 func (h HTTPSBanner) DefineArguments() {
 }
-
-func (h HTTPSBanner) Initialize() (error){
-    return nil
-}
-

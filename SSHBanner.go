@@ -25,7 +25,3 @@ func (s SSHBanner) Protocol()(string){
 
 func (s SSHBanner) DefineArguments() {
 }
-
-func (s SSHBanner) Initialize() (error){
-    return nil
-}

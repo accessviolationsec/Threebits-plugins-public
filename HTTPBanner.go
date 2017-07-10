@@ -41,8 +41,3 @@ func (h HTTPBanner) Protocol()(string){
 
 func (h HTTPBanner) DefineArguments() {
 }
-
-func (h HTTPBanner) Initialize() (error){
-    return nil
-}
-
